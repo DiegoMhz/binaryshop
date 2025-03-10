@@ -1,0 +1,132 @@
+.color2 {color: #181b29;}
+.color3 {color: #363b56;}
+.color4 {color: #595f89;}
+.color5 {color: #8087c2;}
+.colorPlaceholderOParrafo {color: #9b9b9b;}
+.colorError {color: #ff3e3e;}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: #181b29;
+    color: white;
+}
+
+.header{
+    height: 4rem;
+    background-color: #363b56;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.section-button{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+.products, .users{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 2rem;
+    justify-items: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.card, .card-user{
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #363b56;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.08);
+}
+
+.card-body{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.card-description{
+    text-align: center;
+    color: #dadada;
+}
+
+img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn-deleted, .btn-deleted-user{
+    background-color: #ff3e3e;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn-deleted:hover, .btn-deleted-user:hover{
+    opacity: 0.5;
+}
+
+.card-pric{
+    font-size: 18px;
+}
+
+.d-none{
+    display: none;
+}
+
+.btn-ver-usuarios, .btn-ver-productos{
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #595f89;
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn-ver-usuarios:hover, .btn-ver-productos:hover{
+    opacity: 0.5;
+}

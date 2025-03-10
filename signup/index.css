@@ -1,0 +1,143 @@
+.color2 {color: #181b29;}
+.color3 {color: #363b56;}
+.color4 {color: #595f89;}
+.color5 {color: #8087c2;}
+.colorPlaceholderOParrafo {color: #9b9b9b;}
+.colorError {color: #ff3e3e;}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: #181b29;
+    color: white;
+}
+
+.main-container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.section-image{
+    width: 50%;
+    padding: 2rem;
+}
+
+.section-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-form .header{
+    background-color: #f1f1f1;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.div-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.div-form p{
+    text-align: center;
+}
+
+a{
+    color: #8087c2;
+    text-decoration: none;
+}
+
+.input, .select{
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: #363b56;
+    transition: all 0.2s ease-in-out;
+    outline: 2px solid  transparent;
+}
+
+.input:hover, .select:hover{
+    outline: 2px solid  #8087c2;
+}
+
+.input::placeholder, .select::placeholder{
+    color: #9b9b9b;
+}
+
+.input:focus, .select:focus{
+    outline: 2px solid  #8087c2;
+}
+.btn-registro{
+    background-color: #8087c2;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color:white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn-registro:hover{
+    opacity: 0.5;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color:white;
+}
+
+.btn-registro:disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.error{
+    color: #ff3e3e;
+}
+
+.success{
+    color: #00ff00;
+}
+
+.validated, .validated:focus, .validated:hover{
+    outline: 2px solid  #00ff00;
+}
+
+.invalid, .invalid:focus, .invalid:hover{
+    outline: 2px solid #ff3e3e;
+}
+
+
+@media (max-width: 768px){
+
+    .section-image{
+        display: none
+    }
+
+    .section-form{
+        width: 100%;
+    }
+}

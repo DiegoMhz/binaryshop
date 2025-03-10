@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Vendedor</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <p>BinaryShop</p>
+        <div>
+          <a href="/login/">Salir</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="div-btn-volver">
+        <button id="btn-volver" class="btn-volver">Volver</button>
+      </div>
+      <form id="form" class="form">
+        <h1>Editar producto</h1>
+        <div class="div-form">
+          <label for="inputTitle">Titulo</label>
+          <input
+            type="text"
+            id="inputTitle"
+            class="input"
+            name="title"
+            value=""
+          />
+        </div>
+        <div class="div-form">
+          <label for="inputDescription">Descripcion</label>
+          <textarea
+            class="input"
+            id="inputDescription"
+            name="description"
+          ></textarea>
+        </div>
+        <div class="div-form">
+          <label for="inputPrice">Precio</label>
+          <input
+            type="text"
+            id="inputPrice"
+            name="price"
+            class="input"
+            value=""
+          />
+        </div>
+        <div class="div-form">
+          <label for="inputPhoto">Cambiar Foto</label>
+          <input
+            type="file"
+            name="photo"
+            id="inputPhoto"
+            class="input"
+            value=""
+          />
+        </div>
+        <div class="div-form">
+          <button class="btn-edit">Editar Producto</button>
+        </div>
+        <div class="div-form">
+          <p class="mensaje-actualizado d-none">
+            Producto actualizado exitosamente!
+          </p>
+        </div>
+      </form>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
