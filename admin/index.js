@@ -49,7 +49,7 @@ products.forEach((element) => {
   const div = document.createElement("div");
   div.classList = "card";
   const description = element.description.slice(0, 50);
-  const img = element.img.split(":")[0] === 'data' ? `${element.img}` : `../assets/images/${element.img}`;
+  const img = element.img.split(":")[0] === 'data' ? `${element.img}` : `/assets/images/${element.img}`;
 
   div.id = `${element.id}`;
   div.innerHTML = `
