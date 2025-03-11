@@ -26,7 +26,7 @@ productsFilter.forEach((element) => {
   const div = document.createElement("div");
   div.classList = "card";
   const description = element.description.slice(0, 50);
-  const img = element.img.split(":")[0] === 'data' ? `${element.img}` : `/assets/images/${element.img}`;
+  const img = element.img.split(":")[0] === 'data' ? `${element.img}` : `../assets/images/${element.img}`;
   
   div.id = `${element.id}`;
   div.innerHTML = `
@@ -45,7 +45,7 @@ productsFilter.forEach((element) => {
               <p class="card-price">${element.price}$</p>
               <div>
                  <button class="btn-edit">
-                  <a href="./edit-product/?id=${element.id}">Editar</a>
+                  <a href="./edit-product/index.html?id=${element.id}">Editar</a>
                  </button>
                 <button class="btn-deleted">Eliminar</button>
               </div>

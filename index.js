@@ -89,4 +89,5 @@ function pushUsers(users) {
 }
 pushProduct(products);
 pushUsers(users);
-window.location.pathname = "/signup";
+
+window.location.href = "./signup/index.html";

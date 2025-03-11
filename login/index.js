@@ -34,11 +34,11 @@ form.addEventListener("submit", (e) => {
   if (userExist.length > 0) {
     session(nickname, rol);
     if (userExist[0].rol == "comprador") {
-      window.location.pathname = "/buyer";
+      window.location.href = "../buyer/index.html";
     } else if (userExist[0].rol == "vendedor") {
-      window.location.pathname = "/seller";
+      window.location.href = "../seller/index.html";
     } else if (userExist[0].rol == "admin") {
-      window.location.pathname = "/admin";
+      window.location.href = "../admin/index.html";
     }
   } else {
     const invalidMessage = document.querySelector(".p-invalid");
