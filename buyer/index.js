@@ -62,7 +62,7 @@ products.forEach((element) => {
   const img =
     element.img.split(":")[0] === "data"
       ? `${element.img}`
-      : `/assets/images/${element.img}`;
+      : `../assets/images/${element.img}`;
 
   div.id = `${element.id}`;
   div.innerHTML = `

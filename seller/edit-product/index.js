@@ -81,31 +81,3 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-// products.forEach((element) => {
-//   const div = document.createElement("div");
-//   div.classList = "card";
-//   const description = element.description.slice(0, 50);
-
-//   div.id = `${element.id}`;
-//   div.innerHTML = `
-//             <img
-//               class="card-img"
-//               height="120"
-//               width="120"
-//               src="/assets/images/${element.img}"
-//               alt="Producto"
-//             />
-//             <div class="card-body">
-//               <p class="card-title">${element.title}</p>
-//               <p class="card-description">
-//                 ${description}...
-//               </p>
-//               <p class="card-price">Precio: ${element.price}$</p>
-//               <div>
-//                 <a href="./edit-product/?id=${element.id}">Editar</a>
-//                 <button class="btn-deleted">Eliminar</button>
-//               </div>
-//             `;
-
-//   divProductos.appendChild(div);
-// });
