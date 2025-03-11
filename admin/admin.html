@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Vendedor</title>
+    <link rel="stylesheet" href="admin.css" />
+    <title>Admin</title>
   </head>
   <body>
     <header class="header">
@@ -17,12 +17,12 @@
     </header>
 
     <main class="main">
-      <section class="section-add-products">
-        <div class="div-add-product" style="display: flex; justify-content: center; margin-top: 2rem;">
-          <button id="btn-add-product"><a href="./add-product">Añadir productos</a></button>
-        </div>
+      <section class="section-button">
+        <button class="btn-ver-usuarios" id="btn-ver-usuarios">Ver usuarios</button>
+        <h3 id="section-title">Usuarios</h3>
+        <button class="btn-ver-productos" id="btn-ver-productos">Ver productos</button>
       </section>
-      <section class="section-products">
+      <section id="section-products" class="section-products d-none">
         <!-- <h2>Productos</h2> -->
         <div id="products" class="products">
           <h1 class="d-none">No hay productos disponibles</h1>
@@ -49,7 +49,20 @@
           -->
         </div>
       </section>
+      <section id="section-users" class="section-users">
+        <div class="users" id="users">
+          <!-- <div id="card-user" class="card-user">
+            <div class="card-body">
+              <h3 class="card-title">seller456-Comprador</h3>
+              <p class="card-name">Nombre: Diego Hidalgo</p>
+              <p class="card-address">Direccion: Coche</p>
+              <p class="card-rol">Rol: Comprador</p>
+              <button class="btn-deleted-users">Eliminar</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
     </main>
   </body>
-  <script src="index.js"></script>
+  <script src="admin.js"></script>
 </html>
